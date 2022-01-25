@@ -1,25 +1,21 @@
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
     kubernetes.io/ingress.class: "nginx"
     nginx.ingress.kubernetes.io/rewrite-target: /   #new 
   name: example-app
-  namespace: example-app
+  namespace: test-ns-108
 spec:
   tls:
   - hosts:
-    - marcel.test
+    - node1.dev1.cluster.mondas.dev
     secretName: marcel-tls-secret
   rules:
-  - host: marcel.test
+  - host: node1.dev1.cluster.mondas.dev
     http:
       paths:
-      - path: /v1/hello
-        backend:
-          serviceName: example-service
-          servicePort: 80
-      - path: /v2/hello
+      - path: /
         backend:
           serviceName: example-service
           servicePort: 80
