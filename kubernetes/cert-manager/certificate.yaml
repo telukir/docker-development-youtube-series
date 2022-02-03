@@ -2,7 +2,7 @@ apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
   name: example-app
-  namespace: default
+  namespace: test-ns-112-letsen
 spec:
   dnsNames:
     - lb.dev1.cluster.mondas.dev
