@@ -7,10 +7,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - marcel.guru
+    - lb.dev1.cluster.mondas.dev
     secretName: example-app-tls
   rules:
-  - host: marcel.guru
+  - host: lb.dev1.cluster.mondas.dev
     http:
       paths:
       - path: /

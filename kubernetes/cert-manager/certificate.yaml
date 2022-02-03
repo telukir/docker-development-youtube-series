@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   dnsNames:
-    - marcel.guru
+    - lb.dev1.cluster.mondas.dev
   secretName: example-app-tls
   issuerRef:
     name: letsencrypt-cluster-issuer
