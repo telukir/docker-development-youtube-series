@@ -5,7 +5,7 @@ metadata:
   namespace: test-ns-112-letsen
 spec:
   dnsNames:
-    - example.com
+    - lb.dev1.cluster.mondas.dev
   secretName: selfsigned-cert-tls
   issuerRef:
     name: test-selfsigned
